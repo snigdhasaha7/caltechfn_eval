@@ -5,4 +5,4 @@
     ```bash
     foo@bar:~$ tar -xvf test.tar.gz
     ```
-3. Copy the testing images into the test folder. Delete all non image files.
+3. Copy the testing images into the test folder. Delete all non image files (do NOT delete the provided json file).
