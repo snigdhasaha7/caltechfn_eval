@@ -41,7 +41,7 @@ cfg.SOLVER.BASE_LR = 0.00001  # pick a good LR
 cfg.SOLVER.MAX_ITER = 30000   # (max_iter * batch_size) / num_images = num_epochs
 cfg.SOLVER.STEPS = []        # do not decay learning rate
 cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128   # faster, and good enough for this toy dataset (default: 512)
-cfg.MODEL.ROI_HEADS.NUM_CLASSES = 11
+cfg.MODEL.ROI_HEADS.NUM_CLASSES = 10
 
 os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
 trainer = DefaultTrainer(cfg) 
