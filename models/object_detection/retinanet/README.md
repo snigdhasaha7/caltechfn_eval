@@ -1,4 +1,4 @@
-## Instructions for running Faster RCNN models
+## Instructions for running RetinaNet models
 
 # Packages Needed:
 1. pyyaml 5.1
