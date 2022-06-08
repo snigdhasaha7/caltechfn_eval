@@ -1,4 +1,4 @@
-## Instructions for running Faster RCNN models
+## Instructions for running VGG models
 
 # Packages Needed:
 1. tensorflow 2.2+
