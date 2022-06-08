@@ -1,4 +1,4 @@
-## Instructions for running Densenet models
+## Instructions for running DenseNet models
 
 # Packages Needed:
 1. tensorflow 2.2+
