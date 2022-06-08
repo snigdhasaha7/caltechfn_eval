@@ -1,4 +1,4 @@
-## Instructions for running Mobilenet models
+## Instructions for running MobileNet models
 
 # Packages Needed:
 1. tensorflow 2.2+
