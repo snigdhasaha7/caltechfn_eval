@@ -2,6 +2,7 @@ from tensorflow.keras import layers
 from tensorflow.keras.layers import Dense, Flatten
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
+import tensorflow as tf
 import numpy as np
 from PIL import Image
 import scipy.io
@@ -47,8 +48,8 @@ for file in os.listdir('images'):
     img_arr = np.asarray(img)
     test_images.append(img_arr)
 
-mat_test = scipy.io.loadmat('test_32x32.mat') # replace with path file to the .mat file 
-test_labels = mat_test['y']
+mat_test = scipy.io.loadmat('test.mat') # replace with path file to the .mat file 
+test_labels = mat_test['y'][0]
 del mat_test
 
 test_tensor = tf.convert_to_tensor(test_images)

@@ -6,6 +6,7 @@ from tensorflow.keras.optimizers import Adam
 import numpy as np
 from PIL import Image
 import scipy.io
+import os
 
 # train data processing
 images = []
@@ -15,8 +16,8 @@ for file in os.listdir('images'):
     img_arr = np.asarray(img)
     images.append(img_arr)
 
-mat_train = scipy.io.loadmat('train_32x32.mat') # replace with path file to the .mat file 
-labels = mat_train['y']
+mat_train = scipy.io.loadmat('train.mat') # replace with path file to the .mat file 
+labels = mat_train['y'][0]
 
 images = np.array(images)
 labels = np.array(labels)
