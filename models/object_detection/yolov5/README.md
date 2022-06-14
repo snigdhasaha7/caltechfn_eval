@@ -11,5 +11,3 @@ Then, use val.py to validate the trained model.
 In order to calculate mAP_50 scores, change the value of `iou_thres` on Line 103 of `val.py` to 0.5.
 
 In order to calculate mAP_75 scores, change the value of `iou_thres` on Line 103 of `val.py` to 0.75.
-
-Note that we have provided the .yaml files necessary to run this model on our dataset and on the SVHN dataset. 
