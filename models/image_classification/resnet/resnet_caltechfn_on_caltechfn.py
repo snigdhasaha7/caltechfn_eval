@@ -33,9 +33,9 @@ model.add(Flatten())
 model.add(Dense(512, activation='relu'))
 model.add(Dense(10, activation='softmax'))
 
-model.compile(optimizer=Adam(lr=0.001),loss=tf.keras.losses.CategoricalCrossentropy(),metrics=['accuracy'])
+model.compile(optimizer=Adam(lr=0.0005),loss=tf.keras.losses.CategoricalCrossentropy(),metrics=['accuracy'])
 
-history = model.fit(x=train_tensor, y=train_y_categorical, epochs=40)
+history = model.fit(x=train_tensor, y=train_y_categorical, batch_size=32, epochs=40)
 
 # test data processing
 test_images = []

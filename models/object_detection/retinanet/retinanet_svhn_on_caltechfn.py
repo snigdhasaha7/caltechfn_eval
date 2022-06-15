@@ -37,7 +37,9 @@ cfg.DATASETS.TEST = ()
 cfg.DATALOADER.NUM_WORKERS = 4
 cfg.MODEL.WEIGHTS = ""
 cfg.SOLVER.IMS_PER_BATCH = 2
-cfg.SOLVER.BASE_LR = 0.00001  # pick a good LR
+cfg.SOLVER.BASE_LR = 0.0005  
+cfg.SOLVER.MOMENTUM = 0.93
+cfg.SOLVER.WEIGHT_DECAY = 0.0001
 cfg.SOLVER.MAX_ITER = 30000   # (max_iter * batch_size) / num_images = num_epochs
 cfg.SOLVER.STEPS = []        # do not decay learning rate
 cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128   # faster, and good enough for this toy dataset (default: 512)

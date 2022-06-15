@@ -1,3 +1,0 @@
-DATASETS:
-  TRAIN: ("svhn_train", )
-  TEST: ("svhn_test", )
